@@ -1,0 +1,21 @@
+package it.danilo.microservices;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import it.danilo.microservices.service.TourPackageService;
+import it.danilo.microservices.service.TourService;
+
+@SpringBootApplication
+public class MicroservicesApplication {
+	@Autowired
+	private TourPackageService tourPackageService;
+	@Autowired
+	private TourService tourService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicesApplication.class, args);
+	}
+
+}

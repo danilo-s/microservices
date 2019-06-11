@@ -1,0 +1,5 @@
+package it.danilo.microservices.domain;
+
+public class Region {
+
+}

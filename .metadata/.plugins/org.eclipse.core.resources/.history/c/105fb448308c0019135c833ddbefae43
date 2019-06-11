@@ -1,0 +1,21 @@
+package it.danilo.microservices.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import it.danilo.microservices.repo.TourPackageRepository;
+
+@Service
+public class TourPackageService {
+
+	private TourPackageRepository tourPackageRepository;
+
+	@Autowired
+	public TourPackageService(TourPackageRepository tourPackageRepository) {
+		super();
+		this.tourPackageRepository = tourPackageRepository;
+	}
+
+	
+	
+}

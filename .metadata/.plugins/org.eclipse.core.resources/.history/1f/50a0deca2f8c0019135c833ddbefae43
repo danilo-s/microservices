@@ -1,0 +1,5 @@
+package it.danilo.microservices.repo;
+
+public interface TourPackage {
+
+}

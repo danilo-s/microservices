@@ -1,0 +1,9 @@
+package it.danilo.microservices.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+import it.danilo.microservices.domain.TourPackage;
+
+public interface TourPackageRepository extends CrudRepository<TourPackage,String>{
+
+}
